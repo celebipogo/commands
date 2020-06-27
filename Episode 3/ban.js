@@ -8,7 +8,7 @@ module.exports.run = async (bot, message, args) => {
 
   let member = message.mentions.members.first(); //We specify the member we wish to ban.
   if (!member) return message.channel.send("Please specify a valid user."); //If we don't specify a user, nor enter a valid user, it will will respond, letting us know to type a valid user.
-  if (!member.banable) //This checks if the user can be banned, if their permissions don't enable them to get banned, such as Admins, it will let you know it can't ban them.
+  if (!member.bannable) //This checks if the user can be banned, if their permissions don't enable them to get banned, such as Admins, it will let you know it can't ban them.
     return message.channel.send("Unable to ban specified user.");
 
   let reason = args.slice(1).join(" "); //Here we specify the reason they got banned, it is optional, but it helps for mod logs.
