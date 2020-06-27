@@ -1,4 +1,4 @@
-//This is VERY similat to our kick command from the last episode. All we have to do is change everywhere it says "kick" to "ban".
+//This is VERY similar to our kick command from the last episode. All we have to do is change everywhere it says "kick" to "ban".
 
 const Discord = require("discord.js");
 
