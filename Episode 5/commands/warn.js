@@ -35,7 +35,7 @@ module.exports.run = async (bot, message, args) => {
     .addField("User Warned", wUser)
     .addField("Reason", reason)
     .addField("Current Warnings", warns[wUser.id].warns)
-    .setColor("#48BCFF");
+    .setColor("#7289DA");
 
   message.channel.send(warnEmbed);
 };
