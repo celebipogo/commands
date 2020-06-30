@@ -1,7 +1,7 @@
 const Discord = require("discord.js");
 const fs = require("fs");
 const ms = require("ms");
-let warns = JSON.parse(fs.readFileSync("./warnings.json", "utf8")); //We use this so that it knows what the database is. We'll be using a JSON database.
+let warns = JSON.parse(fs.readFileSync("./data/warnings.json", "utf8")); //We use this so that it knows what the database is. We'll be using a JSON database.
 
 module.exports.run = async (bot, message, args) => {
   let wUser = message.guild.member(message.mentions.users.first()) || message.guild.members.cache.get(args[0]); //This enables us to know what member we want to see the warns for.
